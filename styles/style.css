@@ -1,0 +1,109 @@
+body {
+  text-align: left;
+	color: white;
+	font-size: 18px;
+	background-color: lightblue;
+	box-sizing: box-border;
+}
+
+/*inputs*/
+
+input {
+  width: 300px;
+  height: 20px;
+  display: block;
+  border: 2px solid black;
+  opacity: .5;
+  transition: .5s all ease;
+}
+
+input:focus {
+  outline: none;
+  background: cyan;
+}
+
+input:hover {
+  opacity: 1;
+}
+
+/*******************Columns***********************/
+.container div {
+	display:inline-block;
+	max-width:100%;
+  margin: 20px 0 20px 0;
+  position: relative;
+  vertical-align: top;
+}
+
+.col1 {
+  position:absolute;
+  text-align: left;
+	width:30%;
+}
+
+.col2 {
+  position:absolute;
+  text-align: left;
+	width:30%;
+}
+
+.col3 {
+  position:absolute;
+  text-align: left;
+	width:30%;
+}
+
+/*Option boxes*/
+#team {
+  color: black;
+  width: 300px;
+  border: 2px solid black;
+  opacity: .5;
+  transition: .5s all ease;
+}
+
+/*Text Areas*/
+#textarea {
+  border: 2px solid black;
+  opacity: .5;
+  transition: .5s all ease;
+}
+
+textarea:focus {
+  outline: none;
+  background: cyan;
+}
+
+textarea:hover {
+  opacity: 1;
+} 
+
+/*Media Queries*/
+@media screen and (max-width:1060px){
+  .col1 {
+    position: relative;
+    max-width: 30%;
+    vertical-align: top;
+  }
+  .col2 {
+    position: relative;
+    max-width: 30%;
+    vertical-align: top;
+  }
+  .col3 {
+    position: relative;
+    max-width: 30%;
+    vertical-align: top;
+  }
+
+}
+
+@media screen and (max-width:640px){
+  .container div {
+    display: block;
+    margin:0 auto;
+    width:100%;
+  }
+
+
+}
