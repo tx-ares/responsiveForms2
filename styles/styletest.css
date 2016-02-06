@@ -14,11 +14,18 @@
   width:30%;
 }
 
+.column > * {
+  background-color: lightblue;
+  display:inline-block;
+  vertical-align: top;
+  font-size:large;
+  width:30%;
+}
 
 /*inputs*/
 
 input {
-  width: 100%;
+  width: 300px;
   height: 20px;
   /*display: block;*/
   border: 2px solid black;
@@ -45,16 +52,17 @@ input:hover {
 }
 
 #container div {
-  margin: 10px 15px;
+  margin: 20px 10px;
   padding: auto;
   position: relative;
   vertical-align: top;
 }
 
-.column {
-  display:inline-block;
+.column div {
+  display:block;
+  position:absolute;
   text-align: left;
-	width:30%;
+	max-width:30%;
 }
 
 
@@ -63,7 +71,7 @@ input:hover {
   /*display:block;*/
   /*margin-right:70%;*/
   color: black;
-  width: 100%;
+  width: 325px;
   border: 2px solid black;
   opacity: .5;
   transition: .5s all ease;
@@ -72,7 +80,6 @@ input:hover {
 /*Text Areas*/
 #textarea {
   /*display:block;*/
-  width:100%;
   margin-right:70%;
   border: 2px solid black;
   opacity: .5;
@@ -89,12 +96,14 @@ textarea:hover {
 } 
 
 /*Media Queries*/
-@media only screen and (max-width:1060px){
+@media screen and (min-width:1060px){
   .column {
-    display:block;
-    /*background-color:yellow;*/
-    width:80%;
-
+    width: 30%;
   }
 }
 
+@media screen and (min-width:640px){
+   .column {
+    width: 30%;  
+  }
+}
